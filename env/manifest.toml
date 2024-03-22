@@ -1,0 +1,11 @@
+[install]
+docker.pkg-path = "docker"
+nodejs.pkg-path = "nodejs_20"
+
+[vars]
+
+[hook]
+
+[options]
+systems = ["x86_64-linux", "aarch64-darwin"]
+

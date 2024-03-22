@@ -1,0 +1,183 @@
+{
+  "lockfile-version": 0,
+  "manifest": {
+    "hook": {},
+    "install": {
+      "docker": {
+        "pkg-path": "docker"
+      },
+      "nodejs": {
+        "pkg-path": "nodejs_20"
+      }
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux",
+        "aarch64-darwin"
+      ]
+    },
+    "registry": {
+      "defaults": {
+        "subtrees": null
+      },
+      "inputs": {
+        "nixpkgs": {
+          "from": {
+            "owner": "NixOS",
+            "ref": "release-23.11",
+            "repo": "nixpkgs",
+            "type": "github"
+          },
+          "subtrees": [
+            "legacyPackages"
+          ]
+        }
+      },
+      "priority": [
+        "nixpkgs"
+      ]
+    },
+    "vars": {}
+  },
+  "packages": {
+    "aarch64-darwin": {
+      "docker": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "docker"
+        ],
+        "info": {
+          "broken": false,
+          "description": "An open source project to pack, ship and run any application as a lightweight container",
+          "license": "Apache-2.0",
+          "pname": "docker",
+          "unfree": false,
+          "version": "24.0.5"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1711101483,
+            "narHash": "sha256-7a9Aan2J0FbTR97Jk73+Lu5ZYH51MGyFj6XRkC9wUbY=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4d259eae03974d069a9f737a4cf4fcbcc02d65ee",
+            "type": "github"
+          },
+          "fingerprint": "a2889e00ee85d9a14f31e608ea298273ef21ac5585d19456e64176818eaa955a",
+          "url": "github:NixOS/nixpkgs/4d259eae03974d069a9f737a4cf4fcbcc02d65ee"
+        },
+        "priority": 5
+      },
+      "nodejs": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "nodejs_20"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Event-driven I/O framework for the V8 JavaScript engine",
+          "license": "MIT",
+          "pname": "nodejs",
+          "unfree": false,
+          "version": "20.11.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1711101483,
+            "narHash": "sha256-7a9Aan2J0FbTR97Jk73+Lu5ZYH51MGyFj6XRkC9wUbY=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4d259eae03974d069a9f737a4cf4fcbcc02d65ee",
+            "type": "github"
+          },
+          "fingerprint": "a2889e00ee85d9a14f31e608ea298273ef21ac5585d19456e64176818eaa955a",
+          "url": "github:NixOS/nixpkgs/4d259eae03974d069a9f737a4cf4fcbcc02d65ee"
+        },
+        "priority": 5
+      }
+    },
+    "x86_64-linux": {
+      "docker": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "docker"
+        ],
+        "info": {
+          "broken": false,
+          "description": "An open source project to pack, ship and run any application as a lightweight container",
+          "license": "Apache-2.0",
+          "pname": "docker",
+          "unfree": false,
+          "version": "24.0.5"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1711101483,
+            "narHash": "sha256-7a9Aan2J0FbTR97Jk73+Lu5ZYH51MGyFj6XRkC9wUbY=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4d259eae03974d069a9f737a4cf4fcbcc02d65ee",
+            "type": "github"
+          },
+          "fingerprint": "a2889e00ee85d9a14f31e608ea298273ef21ac5585d19456e64176818eaa955a",
+          "url": "github:NixOS/nixpkgs/4d259eae03974d069a9f737a4cf4fcbcc02d65ee"
+        },
+        "priority": 5
+      },
+      "nodejs": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "nodejs_20"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Event-driven I/O framework for the V8 JavaScript engine",
+          "license": "MIT",
+          "pname": "nodejs",
+          "unfree": false,
+          "version": "20.11.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1711101483,
+            "narHash": "sha256-7a9Aan2J0FbTR97Jk73+Lu5ZYH51MGyFj6XRkC9wUbY=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4d259eae03974d069a9f737a4cf4fcbcc02d65ee",
+            "type": "github"
+          },
+          "fingerprint": "a2889e00ee85d9a14f31e608ea298273ef21ac5585d19456e64176818eaa955a",
+          "url": "github:NixOS/nixpkgs/4d259eae03974d069a9f737a4cf4fcbcc02d65ee"
+        },
+        "priority": 5
+      }
+    }
+  },
+  "registry": {
+    "defaults": {
+      "subtrees": null
+    },
+    "inputs": {
+      "nixpkgs": {
+        "from": {
+          "lastModified": 1711101483,
+          "narHash": "sha256-7a9Aan2J0FbTR97Jk73+Lu5ZYH51MGyFj6XRkC9wUbY=",
+          "owner": "NixOS",
+          "repo": "nixpkgs",
+          "rev": "4d259eae03974d069a9f737a4cf4fcbcc02d65ee",
+          "type": "github"
+        },
+        "subtrees": [
+          "legacyPackages"
+        ]
+      }
+    },
+    "priority": [
+      "nixpkgs"
+    ]
+  }
+}
