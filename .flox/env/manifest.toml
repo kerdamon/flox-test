@@ -6,6 +6,14 @@ nodejs.pkg-path = "nodejs_20"
 [vars]
 
 [hook]
+script="""
+# run docker deamon if not running
+if [[ "$(uname | tr '[:upper:]' '[:lower:]')" = "darwin" ]]; then
+  docker ps &>/dev/null || echo "darwin, docker not working"
+fi
+
+docker ps &>/dev/null || echo "linux, docker not working"
+"""
 
 [options]
 systems = ["x86_64-linux", "aarch64-darwin", "x86_64-darwin"]

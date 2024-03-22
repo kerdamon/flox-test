@@ -1,7 +1,9 @@
 {
   "lockfile-version": 0,
   "manifest": {
-    "hook": {},
+    "hook": {
+      "script": "# run docker deamon if not running\nif [[ \"$(uname | tr '[:upper:]' '[:lower:]')\" = \"darwin\" ]]; then\n  docker ps &>/dev/null || echo \"darwin, docker not working\"\nfi\n\ndocker ps &>/dev/null || echo \"linux, docker not working\"\n"
+    },
     "install": {
       "colima": {
         "pkg-path": "colima",
