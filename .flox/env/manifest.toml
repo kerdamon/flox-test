@@ -1,4 +1,5 @@
 [install]
+colima.pkg-path = "colima"
 docker.pkg-path = "docker"
 nodejs.pkg-path = "nodejs_20"
 
@@ -7,5 +8,5 @@ nodejs.pkg-path = "nodejs_20"
 [hook]
 
 [options]
-systems = ["x86_64-linux", "aarch64-darwin"]
+systems = ["x86_64-linux", "aarch64-darwin", "x86_64-darwin"]
 
