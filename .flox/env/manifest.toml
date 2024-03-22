@@ -9,10 +9,12 @@ nodejs.pkg-path = "nodejs_20"
 script="""
 # run docker deamon if not running
 if [[ "$(uname | tr '[:upper:]' '[:lower:]')" = "darwin" ]]; then
-  docker ps &>/dev/null || echo "darwin, docker not working"
+  docker ps &>/dev/null || colima start
 fi
 
-docker ps &>/dev/null || echo "linux, docker not working"
+if [[ "$(uname | tr '[:upper:]' '[:lower:]')" = "linux" ]]; then
+  docker ps &>/dev/null || echo "Warning: docker daemon is not working. Run it with `sudo systemctl start docker`"
+fi
 """
 
 [options]
