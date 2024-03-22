@@ -1,5 +1,5 @@
 [install]
-colima.pkg-path = "colima"
+colima = { pkg-path = "colima", systems = ["aarch64-darwin", "x86_64-darwin"] }
 docker.pkg-path = "docker"
 nodejs.pkg-path = "nodejs_20"
 

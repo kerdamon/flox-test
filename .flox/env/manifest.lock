@@ -4,7 +4,11 @@
     "hook": {},
     "install": {
       "colima": {
-        "pkg-path": "colima"
+        "pkg-path": "colima",
+        "systems": [
+          "aarch64-darwin",
+          "x86_64-darwin"
+        ]
       },
       "docker": {
         "pkg-path": "docker"
@@ -217,34 +221,7 @@
       }
     },
     "x86_64-linux": {
-      "colima": {
-        "attr-path": [
-          "legacyPackages",
-          "x86_64-linux",
-          "colima"
-        ],
-        "info": {
-          "broken": false,
-          "description": "Container runtimes with minimal setup",
-          "license": "MIT",
-          "pname": "colima",
-          "unfree": false,
-          "version": "0.5.6"
-        },
-        "input": {
-          "attrs": {
-            "lastModified": 1711101483,
-            "narHash": "sha256-7a9Aan2J0FbTR97Jk73+Lu5ZYH51MGyFj6XRkC9wUbY=",
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "4d259eae03974d069a9f737a4cf4fcbcc02d65ee",
-            "type": "github"
-          },
-          "fingerprint": "a2889e00ee85d9a14f31e608ea298273ef21ac5585d19456e64176818eaa955a",
-          "url": "github:NixOS/nixpkgs/4d259eae03974d069a9f737a4cf4fcbcc02d65ee"
-        },
-        "priority": 5
-      },
+      "colima": null,
       "docker": {
         "attr-path": [
           "legacyPackages",
