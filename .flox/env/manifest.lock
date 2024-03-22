@@ -2,7 +2,7 @@
   "lockfile-version": 0,
   "manifest": {
     "hook": {
-      "script": "# run docker deamon if not running\nif [[ \"$(uname | tr '[:upper:]' '[:lower:]')\" = \"darwin\" ]]; then\n  docker ps &>/dev/null || colima start\nfi\n\nif [[ \"$(uname | tr '[:upper:]' '[:lower:]')\" = \"linux\" ]]; then\n  docker ps &>/dev/null || echo \"Warning: docker daemon is not working. Run it with `sudo systemctl start docker`\"\nfi\n"
+      "script": "if [[ \"$(uname | tr '[:upper:]' '[:lower:]')\" = \"darwin\" ]]; then\n  docker ps &>/dev/null || echo '⚠️  Warning: cannot connect to docker daemon. You can run it with `colima start`. Remember to stop it before exiting environment!'\nfi\n\nif [[ \"$(uname | tr '[:upper:]' '[:lower:]')\" = \"linux\" ]]; then\n  docker ps &>/dev/null || echo '⚠️  Warning: cannot connect to docker daemon. You can run it with `sudo systemctl start docker`. Remember to stop it before exiting environment!'\nfi\n"
     },
     "install": {
       "colima": {

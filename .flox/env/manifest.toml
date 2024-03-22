@@ -7,13 +7,12 @@ nodejs.pkg-path = "nodejs_20"
 
 [hook]
 script="""
-# run docker deamon if not running
 if [[ "$(uname | tr '[:upper:]' '[:lower:]')" = "darwin" ]]; then
-  docker ps &>/dev/null || colima start
+  docker ps &>/dev/null || echo '⚠️  Warning: cannot connect to docker daemon. You can run it with `colima start`. Remember to stop it before exiting environment!'
 fi
 
 if [[ "$(uname | tr '[:upper:]' '[:lower:]')" = "linux" ]]; then
-  docker ps &>/dev/null || echo "Warning: docker daemon is not working. Run it with `sudo systemctl start docker`"
+  docker ps &>/dev/null || echo '⚠️  Warning: cannot connect to docker daemon. You can run it with `sudo systemctl start docker`. Remember to stop it before exiting environment!'
 fi
 """
 
